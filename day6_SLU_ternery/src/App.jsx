@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -33,3 +34,20 @@ function App() {
 }
 
 export default App
+=======
+import React from 'react'
+import Login from './components/Login'
+import Register from './components/Register'
+import { useState } from 'react'
+
+const App = () => {
+  const [toggle, setToggle] = useState(true)
+  return (
+    <div className="bg-gray-300 h-screen flex flex-col gap-2 justify-center items-center">
+      {toggle ? (<Register setToggle={setToggle} />) : (<Login setToggle={setToggle} />)}
+    </div>
+  )
+}
+
+export default App
+>>>>>>> b1a4a017d16f135a68e4907c05594dfce3eb96c6
