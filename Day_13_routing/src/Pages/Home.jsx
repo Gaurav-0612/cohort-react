@@ -5,7 +5,7 @@ const home = () => {
   let navigate=useNavigate();
   return (
     <div>this is home page
-      <button onClick={()=>navigate("/detail")}>click</button>
+      <button onClick={()=>navigate("/detail")}>Click</button>
       <Outlet/>
     </div>
     
